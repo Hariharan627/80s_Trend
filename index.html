@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>80s AI Photo Trend | Create Your Retro Photo</title>
+
+  <meta
+    name="description"
+    content="Create your own viral 1980s AI photo using these ready-to-copy prompts."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <span>80s</span> AI
+    </div>
+
+    <a href="#prompts" class="nav-btn">
+      Explore Prompts
+    </a>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="badge">
+        🔥 VIRAL 80s AI PHOTO TREND
+      </div>
+
+      <h1>
+        Turn Your Photo<br>
+        Into The <span>80s.</span>
+      </h1>
+
+      <p>
+        Choose your favourite 1980s style, copy the prompt,
+        upload your photo to ChatGPT or Gemini and create
+        your own retro masterpiece.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#prompts" class="primary-btn">
+          ✨ Explore 20 Prompts
+        </a>
+
+        <button onclick="randomPrompt()" class="secondary-btn">
+          🎲 Random Look
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img
+        src="assets/hero.jpeg"
+        alt="1980s AI Photo"
+      >
+
+      <div class="image-label">
+        YOUR PHOTO × 1980s
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HOW IT WORKS -->
+
+  <section class="how">
+
+    <div class="section-title">
+      <small>HOW IT WORKS</small>
+
+      <h2>
+        4 Steps.<br>
+        <span>That's it.</span>
+      </h2>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <strong>01</strong>
+        <h3>Choose a Style</h3>
+        <p>
+          Pick any 80s look you like.
+        </p>
+      </div>
+
+      <div class="step">
+        <strong>02</strong>
+        <h3>Copy Prompt</h3>
+        <p>
+          Copy our ready-made AI prompt.
+        </p>
+      </div>
+
+      <div class="step">
+        <strong>03</strong>
+        <h3>Upload Photo</h3>
+        <p>
+          Upload your clear photo to ChatGPT.
+        </p>
+      </div>
+
+      <div class="step">
+        <strong>04</strong>
+        <h3>Create ✨</h3>
+        <p>
+          Generate your 1980s photo.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROMPTS -->
+
+  <section class="prompts" id="prompts">
+
+    <div class="prompt-header">
+
+      <div>
+        <small>80s PROMPT LIBRARY</small>
+
+        <h2>
+          Pick Your<br>
+          <span>Retro Look.</span>
+        </h2>
+      </div>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search 80s style..."
+        onkeyup="searchPrompts()"
+      >
+
+    </div>
+
+
+    <div id="promptGrid" class="prompt-grid"></div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="logo">
+      <span>80s</span> AI
+    </div>
+
+    <p>
+      Create. Retro. Repeat. ✦
+    </p>
+
+  </footer>
+
+
+  <!-- MODAL -->
+
+  <div id="promptModal" class="modal">
+
+    <div class="modal-content">
+
+      <button
+        class="close"
+        onclick="closeModal()"
+      >
+        ×
+      </button>
+
+      <div id="modalNumber" class="modal-number">
+        PROMPT 01
+      </div>
+
+      <h2 id="modalTitle">
+        Classic Studio
+      </h2>
+
+      <div class="prompt-box">
+
+        <p id="modalPrompt"></p>
+
+      </div>
+
+      <div class="modal-buttons">
+
+        <button
+          onclick="copyPrompt()"
+          class="primary-btn"
+        >
+          📋 Copy Prompt
+        </button>
+
+        <button
+          onclick="openChatGPT()"
+          class="secondary-btn"
+        >
+          Open ChatGPT ↗
+        </button>
+
+      </div>
+
+      <p class="tip">
+        💡 Tip: Upload a clear face photo first,
+        then paste the prompt.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
